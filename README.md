@@ -1,13 +1,35 @@
-# Instruções para as aulas - Componentes e Layout
-- https://docs.expo.dev/guides/server-components/
-## Aula 01 (JSX e HTML no React Native - Como renderizar elementos na tela?) 
+# Sessão 1: Mobile vs Web
+1. Apresentação do curso 
+2. O Que é desenvolvimento Nativo e Hibrido **Doc:** https://reactnative.dev/docs/intro-react-native-components
+3. Configuração do Ambiente de Desenvolvimento **Doc:** https://reactnative.dev/docs/environment-setup
+4. Estrutura de um projeto React Native
 
-## Aula 02 (Estilização e “CSS” no React Native - Posicionando e Embelezando)
+# Sessão 2: Instruções para as aulas - Componentes e Layout
+5. JSX e HTML no React Native **Doc:** https://reactnative.dev/docs/components-and-apis
+6. Estilização e CSS no React Native **Doc:** https://reactnative.dev/docs/stylesheet
+7. Renderização de Lista **Doc:** https://reactnative.dev/docs/flatlist
+8. Criar uma lista de tarefas
 
-## Aula 03 (Renderização de Listas)
+# Sessão 3: Navegação e Roteamento
+9. Navegação em Stack e Empilhamento de Telas **Doc:** https://docs.expo.dev/router/basics/navigation/?redirected
+10. Parâmetros na Rota, Rotas Aninhadas e Tela de Not Found
+11. Navegação em Tabs (Abas) **Doc:** https://docs.expo.dev/router/advanced/tabs/
+12. Navegação em Drawer (Menu Hambúrguer) **Doc:** https://docs.expo.dev/router/advanced/drawer/
 
-## Aula 04 (Fazendo a Lista de Tarefas funcionar com conceitos do React)
-
+# Sessão 4: Usando recursos do Celular
+13. Gestos na Touch Screen e Animações 
+- **Doc1:** https://docs.swmansion.com/react-native-gesture-handler/docs/gestures/use-fling-gesture
+- **Doc2:** https://reactnative.dev/docs/animatedvaluexy
+- Artigo: https://medium.com/reactbrasil/como-funciona-a-api-animated-do-react-native-288b800f68da
+14. Teclado, Safe Area, App Icon e Splash Screen
+- **Doc1 keyboard:** https://www.lefkowitz.me/visual-guide-to-react-native-textinput-keyboardtype-options/
+- **Doc2 SafeAreas:** https://docs.expo.dev/develop/user-interface/safe-areas/
+15. Armazenamento de Dados
+- **Doc1:** https://docs.expo.dev/develop/user-interface/store-data/#async-storage
+- **Doc2 Async Storage:** https://react-native-async-storage.github.io/3.0/
+16. Elementos diferentes no Android e iOS
+- **Doc1:** https://reactnative.dev/docs/platform
+- **Doc2:** https://reactnative.dev/docs/platform-specific-code
 
 # Welcome to your Expo app 👋
 
