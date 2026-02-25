@@ -1,7 +1,7 @@
 import {
   FlatList,
   Image,
-  Pressable,
+  Platform,
   StyleSheet,
   Text,
   TextInput,
@@ -13,6 +13,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import TaskItem from "../components/Task";
 import { colors } from "../constants/colors";
 import { Task } from "../types/task";
+import Button from "../components/Button";
 
 // const initialTasks = [
 //   { id: 1, completed: true, text: "Fazer café" },
@@ -86,7 +87,10 @@ export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.mainContainer}>
       <View style={styles.rowContainer}>
-        <Image source={require("../assets/images/check.png")} style={styles.image} />
+        <Image
+          source={require("../assets/images/check.png")}
+          style={styles.image}
+        />
         <Text style={styles.title}>Minhas Tarefas</Text>
       </View>
 
@@ -100,15 +104,7 @@ export default function HomeScreen() {
           //keyboardType="phone-pad"
         />
 
-        <Pressable
-          onPress={addTask}
-          style={({ pressed }) => [
-            styles.button,
-            { backgroundColor: pressed ? "#3a5bdc" : colors.primary },
-          ]}
-        >
-          <Text style={styles.buttonText}>+</Text>
-        </Pressable>
+        <Button addTask={addTask} />
       </View>
 
       <FlatList
@@ -124,6 +120,9 @@ export default function HomeScreen() {
           />
         )}
       />
+      {Platform.OS === "ios" && <Text>Executando no iOS</Text>}
+      {Platform.OS === "android" && <Text>Executando no Android</Text>}
+      {Platform.OS === "web" && <Text>Executando na web</Text>}
     </SafeAreaView>
   );
 }
@@ -145,18 +144,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 20,
     flexGrow: 1,
-  },
-  button: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  buttonText: {
-    color: "white",
-    fontSize: 20,
-  },
+  }, 
   mainContainer: {
     margin: 20,
   },
